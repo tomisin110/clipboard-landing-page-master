@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%) ;
+     --Light-Blue: hsl(233, 100%, 69%);
+   --Dark-Grayish-Blue: hsl(210, 10%, 33%) ;
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    
+}
+.logo {
+    background-image: url(./images/bg-header-mobile.png);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 40%;
+}
+main{
+width: 90%;
+margin: 0 auto;
+text-align: center;
+}
+.hero{
+    margin-top: 0.5rem;
+    margin-bottom: 4.5rem;
+}
+.hero h1{
+    font-size: 1.9rem;
+    margin-bottom: 1.2rem;
+    color: var(--Dark-Grayish-Blue);
+}
+ p{
+    margin-bottom: 2rem;
+    color: var(--Grayish-Blue);
+}
+ .buttons{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 120px;
+    row-gap: 25px;
+   
+}
+ button{
+    border-radius: 50px;
+    color: #ffff;
+}
+button:hover{
+    cursor: pointer;
+}
+ button:first-child{
+    background-color: var(--Strong-Cyan);
+    border: none;
+}
+ button:last-child{
+    background-color: var(--Light-Blue);
+    border: none;
+}
+ h2{
+    font-size: 1.5rem;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1.2rem;
+}
+h3{
+    font-size: 1.2rem;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1.2rem;
+}
+.snippets , .access, .supercharge, .logo-partners,.clipboard{
+    margin-bottom: 4.5rem;
+}
+.snippets img{
+    width: 90%;
+    height: 90%;
+    margin-bottom: 2.5rem;
+}
+
+.access img{
+    width: 90%;
+    height: 90%;
+}
+.supercharge .cards div img{
+    margin: 2.5rem 0;
+}
+.logo-partners{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2.5rem;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(243, 246, 248);
+    text-align: center;
+    
+}
+footer .footer-logo{
+    margin: 2.5rem 0;
+    width: 20%;
+}
+footer .text p a{
+color: var(--Dark-Grayish-Blue);
+text-decoration: none;
+}
+footer .socials{
+    display: flex;
+    list-style-type: none;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+ 
+   
+    
+}
+footer .socials a{
+    color: var(--Dark-Grayish-Blue);
+    margin: 0 auto;
+    text-decoration: none;
+}
+footer .socials  a:hover {
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+}
+
+footer .text p a:hover{
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+}
+@media(min-width:800px){
+    .logo{
+        background-image: url(./images/bg-header-desktop.png);
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero{
+        width: 45%;
+    }
+    .buttons{
+        display: inline;
+    }
+    button{
+        height: 55px;
+        width: 220px;
+    }
+    button:first-child{
+        margin-right: 1rem;
+    }
+    .snippets .snippets-head{
+        width: 52%;
+        margin: 0 auto;
+    }
+    .snippets .snippets-img-text{
+        margin-top: 5.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 250px;
+    }
+    .snippets .snippets-img-text img{
+        width: 120%;
+        
+    }
+    .snippets .snippets-img-text .text-explanation{
+        text-align: left;
+        width: 55%;
+        padding-top: 30px;
+    }
+    .access{
+        width: 50%;
+    }
+    .access img{
+        margin: 5rem 0;
+        height: 55%;
+    }
+    .supercharge{
+        width: 90%;
+    }
+    .supercharge .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+    }
+    .logo-partners{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 4.5rem;
+        margin-top: 3.5rem;
+        margin-bottom: 1rem;
+        height: 100px;
+        margin-bottom: 4.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .clipboard{
+        width: 50%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-logo{
+        margin: 0 auto;
+    }
+    footer .text{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: left;
+        align-items: center;
+        padding-top: 30px;
+    }
+    footer .text p:nth-child(2){
+        order: 3;
+    }
+    footer .text p:nth-child(4){
+        order: 5;
+    }
+    footer .social{
+        border: 1px solid red;
+    }
+    footer .socials{
+        margin: auto 0;
+    }
+}
